@@ -11,7 +11,7 @@ spec:
     directory:
       recurse: true
       include: '*.yaml'
-    repoURL: https://gitlab.com/fabianborn/argocd-config.git
+    repoURL: https://github.com/fabian-born/argocd-crossplane-vcluster.git
     targetRevision: HEAD
     path: virtualargocds
   syncPolicy:
