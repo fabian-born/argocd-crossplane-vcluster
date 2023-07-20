@@ -1,8 +1,8 @@
 apiVersion: demo.codefresh.io/v1alpha1
 kind: VirtualArgoCD
 metadata:
-  name: customer12
-  namespace: customer12
+  name: customer13
+  namespace: customer13
 spec:
   argocd:
     values: {}
