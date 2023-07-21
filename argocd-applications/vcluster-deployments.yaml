@@ -1,23 +1,23 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Application
-metadata:
-  name: vcluster-deployments
-  namespace: argocd
-spec:
-  destination:
-    namespace: crossplane-system
-    server: https://kubernetes.default.svc
-  project: default
-  source:
-    directory:
-      recurse: true
-      include: '*.yaml'
-    repoURL: https://gitlab.com/fabianborn/argocd-config.git
-    targetRevision: HEAD
-    path: vcluster
-  syncPolicy:
-    automated:
-      selfHeal: true
-      prune: true
-    syncOptions:
-      - CreateNamespace=true
+#apiVersion: argoproj.io/v1alpha1
+#kind: Application
+#metadata:
+#  name: vcluster-deployments
+#  namespace: argocd
+#spec:
+#  destination:
+#    namespace: crossplane-system
+#    server: https://kubernetes.default.svc
+#  project: default
+#  source:
+#    directory:
+#      recurse: true
+#      include: '*.yaml'
+#    repoURL: https://gitlab.com/fabianborn/argocd-config.git
+#    targetRevision: HEAD
+#    path: vcluster
+#  syncPolicy:
+#    automated:
+#      selfHeal: true
+#      prune: true
+#    syncOptions:
+#      - CreateNamespace=true
